@@ -22,17 +22,17 @@ const FilterBar: React.FC = () => {
         placeholder="Search by title"
         value={filter.title}
         onChange={handleInputChange}
-        className="p-2 border rounded w-full md:w-auto"
+        className="p-2 border rounded w-full md:w-auto dark:bg-gray-700 dark:text-white"
       />
       <select
         name="category"
         value={filter.category}
         onChange={handleInputChange}
-        className="p-2 border rounded w-full md:w-auto"
+        className="p-2 border rounded w-full md:w-auto dark:bg-gray-700 dark:text-white"
       >
-        <option value="">All Categories</option>
-        <option value="Income">Income</option>
-        <option value="Expense">Expense</option>
+        <option value="" className="bg-white dark:bg-gray-700 dark:text-white">All Categories</option>
+        <option value="Income" className="bg-white dark:bg-gray-700 dark:text-white">Income</option>
+        <option value="Expense" className="bg-white dark:bg-gray-700 dark:text-white">Expense</option>
       </select>
       <input
         type="text"
@@ -40,7 +40,7 @@ const FilterBar: React.FC = () => {
         placeholder="Currency"
         value={filter.currency}
         onChange={handleInputChange}
-        className="p-2 border rounded w-full md:w-auto"
+        className="p-2 border rounded w-full md:w-auto dark:bg-gray-700 dark:text-white"
       />
       <button
         onClick={handleSearch}
