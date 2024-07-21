@@ -3,6 +3,7 @@
 ## Overview
 
 Transaction Manager is a web application designed to help users manage and track their financial transactions efficiently. It provides features to add, edit, filter, and list transactions with a user-friendly interface. The application is responsive, ensuring optimal usability across various devices and screen sizes.
+
 ![Screenshot](images/light_mode.png)
 ![Screenshot](images/dark_mode.png)
 
