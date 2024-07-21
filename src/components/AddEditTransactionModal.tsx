@@ -46,7 +46,7 @@ const AddEditTransactionModal: React.FC<Props> = ({ transaction, onClose }) => {
               name="date"
               value={formData.date}
               onChange={handleChange}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded dark:bg-gray-700 dark:text-white"
               required
             />
           </div>
@@ -57,7 +57,7 @@ const AddEditTransactionModal: React.FC<Props> = ({ transaction, onClose }) => {
               name="amount"
               value={formData.amount}
               onChange={handleChange}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded dark:bg-gray-700 dark:text-white"
               required
             />
           </div>
@@ -67,11 +67,11 @@ const AddEditTransactionModal: React.FC<Props> = ({ transaction, onClose }) => {
               name="category"
               value={formData.category}
               onChange={handleChange}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded dark:bg-gray-700 dark:text-white"
               required
             >
-              <option value="Income">Income</option>
-              <option value="Expense">Expense</option>
+              <option value="Income" className="bg-white dark:bg-gray-700 dark:text-white">Income</option>
+              <option value="Expense" className="bg-white dark:bg-gray-700 dark:text-white">Expense</option>
             </select>
           </div>
           <div className="mb-4">
@@ -81,7 +81,7 @@ const AddEditTransactionModal: React.FC<Props> = ({ transaction, onClose }) => {
               name="currency"
               value={formData.currency}
               onChange={handleChange}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded dark:bg-gray-700 dark:text-white"
               required
             />
           </div>
@@ -92,7 +92,7 @@ const AddEditTransactionModal: React.FC<Props> = ({ transaction, onClose }) => {
               name="title"
               value={formData.title}
               onChange={handleChange}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded dark:bg-gray-700 dark:text-white"
               required
             />
           </div>
@@ -102,21 +102,21 @@ const AddEditTransactionModal: React.FC<Props> = ({ transaction, onClose }) => {
               name="note"
               value={formData.note}
               onChange={handleChange}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded dark:bg-gray-700 dark:text-white"
             />
           </div>
           <div className="flex justify-end">
             <button
               type="button"
               onClick={handleSubmit}
-              className="bg-blue-500 text-white px-4 py-2 rounded mr-2"
+              className="bg-blue-500 text-white px-4 py-2 rounded mr-2 transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105"
             >
               Save
             </button>
             <button
               type="button"
               onClick={onClose}
-              className="bg-gray-500 text-white px-4 py-2 rounded"
+              className="bg-gray-500 text-white px-4 py-2 rounded transition duration-300 ease-in-out transform hover:bg-gray-700 hover:scale-105"
             >
               Cancel
             </button>
