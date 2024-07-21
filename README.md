@@ -8,22 +8,17 @@ Transaction Manager is a web application designed to help users manage and track
 
 - **Add Transactions:** Add new transactions with detailed information.
 - **Edit Transactions:** Modify existing transactions.
-- **Filter Transactions:** Filter transactions based on criteria such as date, category, and amount.
+- **Search Transactions:** Filter transactions based on criteria such as title, category, and amount type.
 - **Responsive Design:** The application is optimized for desktops, tablets, and mobile devices.
 - **User-Friendly Interface:** Clean and intuitive design for a seamless user experience.
 
 ## Tech Stack
 
 - **Frontend:**
-  - React
-  - TypeScript
-  - Tailwind CSS
-- **State Management:**
-  - Context API
-- **Build Tools:**
-  - Vite
-- **Styling:**
-  - Tailwind CSS
+
+- **React:** A JavaScript library for building user interfaces. It allows for the creation of reusable UI components and manages the state of the application efficiently.
+- **TypeScript:** A statically typed superset of JavaScript that provides type checking and better tooling. It helps in catching errors early during development.
+- **Tailwind CSS:** A utility-first CSS framework that provides low-level utility classes to build custom designs without leaving the HTML. It enables rapid UI development and ensures consistency across the application.
 
 ## Installation
 
