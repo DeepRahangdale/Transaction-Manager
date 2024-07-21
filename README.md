@@ -32,10 +32,10 @@ Before you begin, ensure you have the following installed:
 ### Steps
 
 1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/yourusername/transaction-manager.git
-   cd transaction-manager
-   ```
+```sh
+https://github.com/DeepRahangdale/Transaction-Manager.git
+cd transaction-manager
+```
 2.Install Dependencies:
    ```sh
   npm install
@@ -58,13 +58,13 @@ We welcome contributions! To contribute to this project, follow these steps:
 3. Clone the forked repository to your local machine.
 
 ```markdown
-git clone https://github.com/DeepRahangdale/Concierge-AI.git
+https://github.com/DeepRahangdale/Transaction-Manager.git
 ```
 
 4. Change the present working directory.
 
 ```markdown
-cd Concierge-AI
+cd transaction-manager
 ```
 
 5. Make a new branch
@@ -98,3 +98,6 @@ Please ensure your code follows the project's coding standards and includes appr
 ## Contact
 If you have any questions or feedback, feel free to reach out:
 Email: deeprahangdale2003@gmail.com
+
+
+Feel free to customize the details such as the GitHub repository URL, email, and other contact information to match your project's specifics.
