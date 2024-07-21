@@ -15,20 +15,20 @@ const FilterBar: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between mb-4">
+    <div className="flex flex-col md:flex-row items-center justify-between mb-4 space-y-2 md:space-y-0 md:space-x-2">
       <input
         type="text"
         name="title"
         placeholder="Search by title"
         value={filter.title}
         onChange={handleInputChange}
-        className="p-2 border rounded mb-2 md:mb-0 md:mr-2"
+        className="p-2 border rounded w-full md:w-auto"
       />
       <select
         name="category"
         value={filter.category}
         onChange={handleInputChange}
-        className="p-2 border rounded mb-2 md:mb-0 md:mr-2"
+        className="p-2 border rounded w-full md:w-auto"
       >
         <option value="">All Categories</option>
         <option value="Income">Income</option>
@@ -40,11 +40,11 @@ const FilterBar: React.FC = () => {
         placeholder="Currency"
         value={filter.currency}
         onChange={handleInputChange}
-        className="p-2 border rounded mb-2 md:mb-0 md:mr-2"
+        className="p-2 border rounded w-full md:w-auto"
       />
       <button
         onClick={handleSearch}
-        className="bg-blue-500 text-white px-4 py-2 rounded transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105"
+        className="bg-blue-500 text-white px-4 py-2 rounded transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 w-full md:w-auto"
       >
         Search
       </button>

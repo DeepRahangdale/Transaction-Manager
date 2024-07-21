@@ -20,20 +20,22 @@ const TransactionList: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="p-4">
       <button
         onClick={handleAdd}
-        className="bg-blue-500 text-white px-4 py-2 rounded mb-4 transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105"
+        className="bg-blue-500 text-white px-4 py-2 rounded mb-4 transition duration-300 ease-in-out transform hover:bg-blue-700 hover:scale-105 w-full md:w-auto"
       >
         Add Transaction
       </button>
-      {transactions.map((transaction) => (
-        <TransactionItem
-          key={transaction.id}
-          transaction={transaction}
-          onEdit={() => handleEdit(transaction)}
-        />
-      ))}
+      <div className="space-y-4">
+        {transactions.map((transaction) => (
+          <TransactionItem
+            key={transaction.id}
+            transaction={transaction}
+            onEdit={() => handleEdit(transaction)}
+          />
+        ))}
+      </div>
       {isModalOpen && (
         <AddEditTransactionModal
           transaction={selectedTransaction!}
