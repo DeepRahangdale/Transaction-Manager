@@ -1,23 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
-const ThemeSwitcher: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+interface ThemeSwitcherProps {
+  darkMode: boolean;
+  toggleTheme: () => void;
+}
 
+const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({ darkMode, toggleTheme }) => {
   useEffect(() => {
-    if (document.documentElement.classList.contains('dark')) {
-      setDarkMode(true);
-    }
-  }, []);
-
-  const handleThemeChange = () => {
-    document.documentElement.classList.toggle('dark');
-    setDarkMode(!darkMode);
-  };
+    document.documentElement.classList.toggle('dark', darkMode);
+  }, [darkMode]);
 
   return (
     <div className="fixed top-4 right-4">
       <button
-        onClick={handleThemeChange}
+        onClick={toggleTheme}
         className="flex items-center bg-gray-800 text-white px-4 py-2 rounded-full transition duration-300 ease-in-out transform hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600"
       >
         {darkMode ? (
